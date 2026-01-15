@@ -79,3 +79,14 @@ curl -X PUT http://localhost:8000/terms/rest   -H "Content-Type: application/jso
 ```bash
 curl -X DELETE http://localhost:8000/terms/rest
 ```
+
+## Демонстрация работы сервиса
+
+### Swagger UI
+![Swagger UI](screenshots/swagger.png)
+
+### Добавление термина (POST /terms)
+![POST term](screenshots/post_term.png)
+
+### Контейнер Docker запущен
+![Docker running](screenshots/docker_running.png)
