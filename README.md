@@ -79,16 +79,3 @@ curl -X PUT http://localhost:8000/terms/rest   -H "Content-Type: application/jso
 ```bash
 curl -X DELETE http://localhost:8000/terms/rest
 ```
-
-## Генерация статической документации (дополнительный плюс)
-Можно собрать **статическую HTML-документацию** по OpenAPI через ReDoc.
-
-1) Запустите API (Docker или локально)  
-2) Выполните команды:
-```bash
-curl -o openapi.json http://localhost:8000/openapi.json
-npx redoc-cli bundle openapi.json -o docs/index.html
-```
-
-Далее папку `docs/` можно публиковать через GitHub Pages (как источник `/docs`).
-
