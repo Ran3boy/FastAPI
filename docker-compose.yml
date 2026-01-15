@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    container_name: glossary-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////app/data/glossary.db
+      - APP_TITLE=Глоссарий ВКР (Practice)
+      - APP_VERSION=1.0.0
+    volumes:
+      - glossary_data:/app/data
+
+volumes:
+  glossary_data:
